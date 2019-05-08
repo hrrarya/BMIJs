@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-4 col-md-offset-4">
+          <div id="bmicm">
+            <h1 class="text-center">BMI Calculator</h1>
+            <form action="">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Height in cm"
+                  id="height"
+                />
+              </div>
+              <div class="form form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Weight in kg"
+                  id="weight"
+                />
+              </div>
+              <div class="form form-group">
+                <input
+                  type="submit"
+                  class="btn btn-primary"
+                  id="bmic"
+                  value="Submit"
+                />
+                <input
+                  type="submit"
+                  class="btn btn-danger"
+                  id="reset"
+                  style="float:right"
+                  value="Reset"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="text-center" id="bmi-result">
+            <p id="yourBmi">Your BMI is 25.00</p>
+            <p id="bmiCondition">Your BMI is Normal</p>
+            <p id="weightCond"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
